@@ -1,0 +1,41 @@
+@mixin flex($background,$background-size,$flex,$justify,$align,$direction,$height,$width){
+
+    background: $background;
+    background-size: $background-size;
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    height: $height;
+    width: $width;
+
+
+
+}
+
+
+%button-base{
+    background-color: rgb(14, 161, 51);
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 200px;
+    border-color: rgb(14, 161, 51);
+    border-radius: 5%;
+    font-size: small;
+
+    &:hover {
+        background-color: darken(rgb(14, 161,51), 10%);
+        border-color: darken(rgb(14, 161,51), 10%);
+    }
+
+    
+}
+
+%rotacion{
+    transition: 2s;
+
+    &:hover{
+        transform: rotateZ(360deg);
+    }
+}
